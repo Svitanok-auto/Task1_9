@@ -1,4 +1,6 @@
-﻿namespace Practice_9
+﻿using System;
+
+namespace Practice_9
 {
     public class Calculator
     {
@@ -13,12 +15,12 @@
 
         public double Add(double x, double y)
         {
-            return x + y;
+            return Math.Round(x + y, 2);
         }
 
         public double Substract(double x, double y)
         {
-            return x - y;
+            return Math.Round(x - y, 2);
         }
 
         public double Divide(double x, double y)
@@ -29,13 +31,13 @@
             }
             else
             {
-                return x / y;
+                return Math.Round(x / y, 2);
             }    
         }
 
         public double Multiply(double x, double y)
         {
-            return x * y;
+            return Math.Round(x * y, 2);
         }
     }
 }

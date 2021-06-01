@@ -13,10 +13,11 @@ namespace Practice_9
         {
             list = listValues;
         }
+        public ScientificCalculator(){ }
 
         public double Pow(double x, double y)
         {
-            return Math.Pow(x, y);
+            return Math.Round(Math.Pow(x, y), 2);
         }
 
         public double Percents(double x, double y)
@@ -29,7 +30,7 @@ namespace Practice_9
             return Math.Round(x % y, 2); ;
         }
 
-        public double ListValuesSum(List<int> listValues)
+        public int ListValuesSum(List<int> listValues)
         {
             int sum = default(int);
             for (int i = 0; i < listValues.Count; i++)

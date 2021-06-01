@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Practice9_Tests
 {
     [TestFixture]
-    class ScientificCalculator_Tests
+    public class ScientificCalculator_Tests
     {
        [Test]
         public void TestPowPass()
@@ -44,7 +44,7 @@ namespace Practice9_Tests
         }
 
         [Test]
-        public void TestListSum()
+        public void TestListSumPass()
         {
             List<int> listValues = new List<int>() { 1, 2, 3, 45};
             ScientificCalculator scientificCalc = new ScientificCalculator(listValues);
@@ -52,7 +52,7 @@ namespace Practice9_Tests
         }
 
         [Test]
-        public void ListMinValue()
+        public void ListMinValuePass()
         {
             List<int> listValues = new List<int>() { 1, 2, 3, 45 };
             ScientificCalculator scientificCalc = new ScientificCalculator(listValues);
